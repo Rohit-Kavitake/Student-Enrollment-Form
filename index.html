@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Student Enrollment Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <center><h2> Student Enrollment Form</h2> </center>
+        </div>
+    <!-- </div>
+    <div class="container" id=contain> -->
+        <div class="col-md-6 col-sm-6" id="register">
+            <form onsubmit="AddData();return false;">
+                <div id="name" class="form-group">
+                    <label for="name" >Name </label>
+                    <input type="text" class="form-control" id="nameInput" required>
+                </div>
+                <div id="email" class="form-group">
+                    <label for="email">Email </label>
+                    <input type="email" class="form-control" id="emailInput" required>
+                </div>
+                <div id="website" class="form-group">
+                    <label for="websiteURL" >Website </label>
+                    <input type="url" class="form-control" id="websiteInput" required>
+                </div>
+                <div id="image" class="form-group">
+                    <label for="imageURL" >Image Link </label>
+                    <input type="url" class="form-control" id="imageInput" required>
+                </div>
+                
+                <div class="get">
+                        <label>Gender</label>
+                    <div class="select">
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label class="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label class="male">Female</label>
+                    </div>
+                    
+                </div>
+                <div class="form-check" id="skills">
+                    <label>Skills:</label>
+                    <div class="skills">
+                        <input type="checkbox" class="form-check-input" id="JavaCheck">
+                        <label class="form-check-label" id="javalbl">Java</label>
+                        <input type="checkbox" class="form-check-input" id="HTMLcheck">
+                        <label class="form-check-label" id="htmllbl">HTML</label>
+                        <input type="checkbox" class="form-check-input" id="cssCheck">
+                        <label class="form-check-label" id="csslbl">CSS</label>
+                    </div>
+                </div>
+                <div class="form-check form-group" id="buttons">
+                    <button type="reset" id="resetbtn" class="btn btn-danger">CLEAR</button>
+                    <button type="submit" class="btn btn-primary" onclick="AddData()">Enroll Student</button>
+                </div>
+            </form>
+        </div>
+        <hr class="seperation">        
+        <div class="col-md-6 col-sm-6" id="showData">
+            <center>
+            <table id="ShowRecords">
+                <tr>
+                    <td>Description</td>
+                    <td>Image</td>
+                </tr>
+                <tr>
+                    <td><h3>John Martin</h3>Male <br>jhonmartin23@gmail.com<br><a href="https://rohit-kavitake.github.io/Rohitkavitake/">https://rohit-kavitake.github.io/Rohitkavitake/</a><br>Html css java</td>
+                    <td><img class="img-responsive" src="https://img.icons8.com/ios/2x/administrator-male--v1.png"</td>
+                </tr>
+            </table>
+            </center>
+        </div>
+    </div> 
+    <!-- <button onclick="AddData()">rk</button>  -->
+</body>
+<script src="script.js"></script>
+</html>

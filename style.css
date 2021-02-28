@@ -1,0 +1,131 @@
+
+
+form div{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    margin: 0.4rem;
+}
+
+form label{
+    /* margin-right: 5em; */
+    box-sizing: border-box;
+    width: 5em;
+    /* margin-right: 2%; */
+}
+
+form input{
+    width: 20;
+    padding: 2px;
+}
+
+form{
+    padding: 2rem;
+    margin: 0.8rem;
+}
+
+.get{
+    justify-content: left;
+}
+
+.page-header{
+    background-color: #44dd77;
+    padding: 0.4rem;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.container{
+    margin-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    /* border-right: solid 2px black; */
+    /* border-bottom: solid 2px black; */
+}
+body div{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#register{
+    padding-left: 2%;
+
+}
+
+.buttons{
+    margin-top: 1.5rem;
+}
+
+.skills{
+    justify-content: left;
+}
+
+.skills label{
+    padding-left: 1rem;
+}
+.select label{
+    padding-left: 1rem;
+}
+.buttons button{
+    margin: 2rem;
+}
+
+.form-check{
+    justify-content: left;
+}
+.skills label{
+    padding-right: 0.4rem;
+}
+
+/* #showData{
+    border-right: solid 2px black;
+    height: 354px
+} */
+
+td {
+    border: 1px solid rgb(120, 216, 65);
+    text-align: left;
+    padding: 8px;
+    font-size: 1.2rem;
+}
+table{
+    padding: 2rem;
+    margin: 2rem;
+    /* align-items: stretch; */
+    /* height: 50px; */
+}
+
+td img{
+    height: 10rem;
+    width: 10rem;
+}
+  
+tr:nth-child(even) {
+    background-color: #7ca777;
+}
+
+@media screen and (min-width : 426px) {
+    #showData{
+        box-sizing: border-box;
+        overflow: auto;
+        border-right: solid 2px black;
+        height: 354px
+    }
+    
+    #register{
+        border-left: solid 2px black;
+    }
+    form{
+        border-right: #44dd77 solid 1px;
+    }
+    .seperation{display: none;}
+}
+
+@media screen and (max-width : 426px){
+    .seperation{
+        background-color: black;
+        height: 1px;
+    }
+}
