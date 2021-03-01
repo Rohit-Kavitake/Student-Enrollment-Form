@@ -31,7 +31,7 @@ const AddData = () =>{
     if(checkFeilds())
         Data.push(datatemp);
         loadData()
-        document.querySelector("#resetbtn").click();
+//         document.querySelector("#resetbtn").click();
     console.log(Data);
 }
 let i = 0;
